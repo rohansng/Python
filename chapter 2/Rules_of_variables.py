@@ -7,6 +7,8 @@ one8 = 24
 # @sameer = 56 # Invalid due to @ symbol
 # s@meer = 23 # Invalid due to @ symbol
 # Sam rohan = 21 #Invalid due to white space 
+#if=2
+#else=3
 
 '''RULES FOR CHOOSING AN IDENTIFIER
 1. A variable name can contain alphabets, digits, and underscores.
