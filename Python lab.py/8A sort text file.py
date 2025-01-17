@@ -1,6 +1,27 @@
 '''Develop a program to read the contents of a text file, sort contents read and write the sorted 
 contents into a separate text file.'''
 
+import os
+
+# Open the file for reading
+fhand = open('1.txt', 'r')
+content = fhand.read()
+fhand.close()  # Close the file after reading
+
+# Process the content
+content = content.split('\n')  # Split content into lines
+content.sort()  # Sort the lines alphabetically
+
+# Open another file for writing
+fhand = open('write.txt', 'w')
+for word in content:
+    fhand.write(word + '\n')  # Write each sorted line to the new file
+fhand.close()  # Close the file after writing
+
+
+
+
+'''
 # Import necessary module
 import os
 
@@ -25,4 +46,4 @@ if os.path.exists(input_file):
     print(f"Contents sorted and written to '{output_file}'.")
 else:
     print(f"Error: File '{input_file}' does not exist.")
-
+'''
